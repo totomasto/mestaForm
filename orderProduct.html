@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polnebo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body class="top-navigation">
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom white-bg">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="navbar-header">
+
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a aria-expanded="false" role="button" id="newOrder"  > Comanda noua</a>
+
+                    </li>
+                    <li>
+                        <a href="products.html" aria-expanded="false" role="button" href="#"  > Comanda curenta</a>
+
+                    </li>
+                    <li>
+                        <a href="products.html" aria-expanded="false" role="button" href="#"  > Istoric comenzi</a>
+
+                    </li>
+                    <li>
+                        <a href="products.html" aria-expanded="false" role="button" href="#"  > Istoric oferte</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        </div>
+
+
+<br><br>
+
+
+<div class="row">
+
+    <div class="col-md-9">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <span class="pull-right">(<strong> </strong>) items</span>
+                <h5>Items in your cart</h5>
+            </div>
+
+            <div class="ibox-content">
+              <div class="col-sm-2">
+
+
+               <label for="productColor"> Selecteaza culoare </label>
+               <select class="form-control" style="width: 200px;" id="productColor"><option selected="">Selecteaza culoare</option></select>
+               <hr>
+               <label for="productThickness">Selecteaza grosime</label>
+               <select class="form-control" style="width: 150px;" id="productBulk"><option selected="">Selecteaza grosime</option></select>
+
+
+
+             </div>
+
+
+
+             <div class ="col-sm-10">
+
+                 <div style="overflow-x: scroll; height:800px;">
+                  <table class="table table-fixed"  id="group1ProductTable">
+                      <thead>
+                      <tr>
+                          <th style="width: 150px;">Nume produs</th>
+                          <th>Lungime</th>
+                          <th>Latime</th>
+                          <th>Bucati</th>
+
+                      </tr>
+                      </thead>
+                      <tbody>
+
+
+                      </tbody>
+                  </table>
+                </div>
+             </div>
+
+
+              <div class="ibox-content">
+
+
+
+
+
+              </div>
+
+
+
+              <br>
+
+              </a>
+
+
+            </div>
+
+            <div class="ibox-content">
+
+                <button href="" id="saveProduct" class="btn btn-primary btn-lg btn-rounded btn-block">Salveaza produs</button>
+
+
+
+            </div>
+            <br>
+
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="ibox">
+            <div class="ibox-title">
+                <h5>Cart Summary</h5>
+            </div>
+            <div class="ibox-content">
+                            <span>
+                                Total fara TVA
+                            </span>
+                <h2 class="font-bold">
+                    &euro;
+
+                </h2>
+
+                <span>
+                                TVA
+                            </span>
+                <h2 class="font-bold">
+                    &euro;
+
+                </h2>
+                <div class="ibox-content">
+                            <span>
+                                Total
+                            </span>
+                    <h2 class="font-bold">
+
+                        &euro;
+
+                    </h2>
+
+
+                    <span class="text-muted small">
+                                *Se achita cu OP 7Z
+
+                            </span>
+                    <div class="m-t-sm">
+                        <div class="btn-group">
+
+                               <a data-toggle="modal" class="btn btn-primary" href="#modal-form">Checkout</a>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row" id="categoriesDiv">
+
+    </div>
+</div>
+
+
+
+
+<script src="app.js"></script>
+<script>
+getSelectedSubProduct();
+zoom();
+showCurrentOrder();
+</script>
+
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Flot -->
+<script src="js/plugins/flot/jquery.flot.js"></script>
+<script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+
+<!-- ChartJS-->
+<script src="js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- Peity -->
+<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<!-- Peity demo -->
+<script src="js/demo/peity-demo.js"></script>
+
+
+
+
+</body>
+
+</html>

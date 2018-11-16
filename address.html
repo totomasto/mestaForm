@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polnebo construct - formular</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+
+    <div class="middle-box text-center lockscreen animated fadeInDown">
+
+
+
+                <div class="form-group">
+                  <label>Judet</label>
+                  <select  class="form-control" id="orderRegion" >
+                    <option value="ALBA">ALBA</option>
+                    <option value="ARAD">ARAD</option>
+                    <option value="ARGES">ARGES</option>
+                    <option value="BACAU">BACAU</option>
+                    <option value="BIHOR">BIHOR</option>
+                    <option value="BISTRITA-NASAUD">BISTRITA-NASAUD</option>
+                    <option value="BOTOSANI">BOTOSANI</option>
+                    <option value="BRAILA">BRAILA</option>
+                    <option value="BRASOV">BRASOV</option>
+                    <option value="BUZAU">BUZAU</option>
+                    <option value="CALARASI">CALARASI</option>
+                    <option value="CARAS-SEVERIN">CARAS-SEVERIN</option>
+                    <option value="CLUJ">CLUJ</option>
+                    <option value="CONSTANTA">CONSTANTA</option>
+                    <option value="COVASNA">COVASNA</option>
+                    <option value="DIMBOVITA">DIMBOVITA</option>
+                    <option value="DOLJ">DOLJ</option>
+                    <option value="GALATI">GALATI</option>
+                    <option value="GIURGIU">GIURGIU</option>
+                    <option value="GORJ">GORJ</option>
+                    <option value="HARGHITA">HARGHITA</option>
+                    <option value="HUNEDOARA">HUNEDOARA</option>
+                    <option value="IALOMITA">IALOMITA</option>
+                    <option value="IASI">IASI</option>
+                    <option value="ILFOV">ILFOV</option>
+                    <option value="MARAMURES">MARAMURES</option>
+                    <option value="MEHEDINTI">MEHEDINTI</option>
+                    <option value="MURES">MURES</option>
+                    <option value="NEAMT">NEAMT</option>
+                    <option value="NECUNOSCUT">NECUNOSCUT</option>
+                    <option value="OLT">OLT</option>
+                    <option value="PRAHOVA">PRAHOVA</option>
+                    <option value="SALAJ">SALAJ</option>
+                    <option value="SATU MARE">SATU MARE</option>
+                    <option value="SIBIU">SIBIU</option>
+                    <option value="SUCEAVA">SUCEAVA</option>
+                    <option value="TELEORMAN">TELEORMAN</option>
+                    <option value="TIMIS">TIMIS</option>
+                    <option value="TULCEA">TULCEA</option>
+                    <option value="VASLUI">VASLUI</option>
+                    <option value="VILCEA">VILCEA</option>
+                    <option value="VRANCEA">VRANCEA</option>
+
+                  </select>
+                  <br>
+                  <label>Oras</label>
+                  <input type="text" id="orderCity" class="form-control" value="">
+                  <br>
+                  <label>Adresa livrare</label>
+                  <input type="text" id="orderAddress" class="form-control" value="">
+                  <br>
+                  <label>Telefon</label>
+                  <input type="text" id="orderPhone" class="form-control" value="">
+                  <br>
+                  <label>Data livare</label>
+                  <input type="date" id="orderDate" class="form-control" value="">
+                  <br>
+                  <label>Observatii</label>
+                  <textarea id="orderObs" class="form-control" rows="4" cols="80"></textarea>
+                  <br>
+
+
+
+                </div>
+                <button class="btn btn-primary block full-width" id="addDeliveryAddress">Salveaza adresa</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

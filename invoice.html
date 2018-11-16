@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polnebo</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body class="top-navigation">
+
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+
+
+
+<br><br>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated fadeInRight">
+                    <div class="ibox-content p-xl">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <a class="brand" style="margin: 0; float: none; text-align:center" href="#">
+                                  <button class="btn btn-danger" onclick="history.back();" > Mergi inapoi </button>
+                                  <button aria-expanded="false" role="button" id="newOrder" class="btn btn-primary"> Comanda noua </button>
+                                  <button aria-expanded="false" role="button" id="print-pdf" class="btn btn-success"> PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </button>
+                                  <button aria-expanded="false" role="button" onclick="exportOrderExcel()" id="export-ex" class="btn btn-warning"> EXCEL <i class="fa fa-file-excel-o" aria-hidden="true"></i> </button>
+
+                                  <br><br>
+                                  <label id="pdf-path"></label>
+                                  <img src="img/polnebo.png" style="width:320px; height:80px;" /></a>
+                                    <h5>From:</h5>
+                                     <address>
+                                        <strong>POLNEBO CONSTRUCT SRL</strong><br>
+                                        Cod fiscal:  RO4214490 <br>
+                                        Reg. com:  J29 /1703 /1993 <br>
+                                        Sediu:  BAICOI <br>
+                                        Str. Infratirii 76A Baicoi <br>
+                                        Banca:  BTRL <br>
+                                        Cont:  RO73BTRLRONCRT0422968201 <br>
+                                        Judet:  PRAHOVA <br>
+
+
+
+                                    </address>                                </div>
+
+                                <div class="col-sm-6 text-right">
+                                    <h4>Invoice No.</h4>
+                                    <h4 class="text-navy"></h4>
+                                    <span>To:</span>
+
+
+
+                                    <p>
+                                        <span><strong>Invoice Date:</strong> </span><br/>
+                                        <span><strong>Due Date:</strong> </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive m-t">
+                                <table class="table invoice-table"  id="sessionProducts">
+                                  <thead>
+                                  <tr>
+                                      <th>Nume produs</th>
+                                      <th>Bucati</th>
+                                      <th>Lungime</th>
+                                      <th>Latime</th>
+                                      <th>Culoare</th>
+                                      <th>Pret</th>
+                                      <th>TotalMp</th>
+                                      <th>Total</th>
+                                      <th></th>
+
+
+                                  </tr>
+                                  </thead>
+                                    <tbody>
+
+
+                                    </tbody>
+                                </table>
+                            </div><!-- /table-responsive -->
+
+                            <table class="table invoice-total">
+                                <tbody>
+                                <tr>
+                                    <td><strong>Sub Total :</strong></td>
+                                    <td id="wVat">
+                                        &euro;
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TAX :</strong></td>
+                                    <td id="vat">
+                                       &euro;
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TOTAL :</strong></td>
+                                    <td id="total">
+                                       &euro;
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TOTAL(mp) : </strong></td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="app.js"></script>
+        <script type="text/javascript">
+
+
+
+      showCurrentOrder();
+
+        </script>

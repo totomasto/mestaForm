@@ -1,0 +1,16 @@
+{
+  "name": "mestaform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.2",
+    "exceljs": "^1.6.2",
+    "mysql": "^2.16.0"
+  }
+}
