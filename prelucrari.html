@@ -57,7 +57,7 @@
 
 <div class="row">
 
-    <div class="col-md-9">
+    <div class="col-md-12">
 
         <div class="ibox">
             <div class="ibox-title">
@@ -93,9 +93,7 @@
                     </table>
 </b></font>
                 </div>
-                    <a  class="btn btn-success btn-rounded btn-block" id="discountLine">Adauga linie discount</a>
-                    <br>
-                    <button class='btn btn-warning btn-rounded btn-block' id='customizeBtn' onclick='customizeArticle();' >Adauga prelucrare</button>
+
             </div>
 
             <div class="ibox-content">
@@ -115,57 +113,7 @@
 
     </div>
 
-    <div class="col-md-3">
 
-      <div class="ibox">
-          <div class="ibox-title">
-              <h5>Cart Summary</h5>
-          </div>
-          <div class="ibox-content">
-                          <span>
-                              Total fara TVA
-                          </span>
-              <h2 id="wVat" class="font-bold">
-                  &euro;
-
-              </h2>
-
-              <span>
-                              TVA
-                          </span>
-              <h2 id="vat" class="font-bold">
-                  &euro;
-
-              </h2>
-              <div class="ibox-content">
-                          <span>
-                              Total
-                          </span>
-                  <h2 id="total" class="font-bold">
-
-                      &euro;
-
-                  </h2>
-
-
-                  <span class="text-muted small">
-                              *Se achita cu OP 7Z
-
-                          </span>
-                  <div class="m-t-sm">
-
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="wrapper wrapper-content">
-    <div class="row" id="categoriesDiv">
-
-    </div>
-</div>
 
 
 
@@ -173,9 +121,8 @@
 <script src="app.js"></script>
 <script>
 
-// retrieveProducts();
-loadCategories();
-showCurrentOrder();
+
+chooseArticleCustomization();
 
 </script>
 <script type="text/javascript">

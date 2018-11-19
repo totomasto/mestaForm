@@ -22,7 +22,7 @@ document.getElementById('pdf-path').innerHTML = message;
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Depaco123#",
+  password: "",
   database: "mestadb"
 
 });
@@ -42,7 +42,7 @@ categories +=    "<div class='col-md-2'>"+
                                 "<div class='product-imitation'>"+
                                     "<p><font color='11B800' size='5' face='calibri'>"+ result[i].structure +""+
                                     "</font></label><br></p>"+
-                                    "<img alt='image' class='img-circle' width='200px' height='200px' alt='avatar' src='img/"+ result[i].structure+ ".jpg'/><br><br><br><br>"+
+                                    "<img alt='image' class='img-circle' width='150px' height='150px' alt='avatar' src='img/"+ result[i].structure+ ".jpg'/><br><br><br><br>"+
 
                                 "</div>"+
                             "</div>"+
@@ -244,7 +244,7 @@ if(fileName === 'invoice.html'){
 /// do nothing just for a moment
 } else {
   var cell9 = row.insertCell(-1);
-  cell9.innerHTML = "<button class='btn btn-success btn-rounded' id='"+result[i].name+"' onclick=''>Adauga prelucrare</button>";
+
   cell9.innerHTML += "<button class='btn btn-danger btn-rounded' id='"+result[i].name+"' onclick='deleteArticle(this.id)'>Sterge articol</button>";
 }
       totalOrder += totalMp * result[i].price;
@@ -418,7 +418,7 @@ location.reload();
 
 
 function zoom() {
-    document.body.style.zoom = "80%"
+    document.body.style.zoom = "75%"
 }
 
 
@@ -464,5 +464,28 @@ function exportOrderExcel(){
     workbook.xlsx.writeFile("./comenzi/comanda test .xlsx").then(function() {
         console.log("xls file is written.");
     });
+
+}
+
+
+
+function customizeArticle(){
+
+
+
+  const remote = require('electron').remote;
+ const BrowserWindow = remote.BrowserWindow;
+
+ var win = new BrowserWindow({ width: 1200, height: 800 });
+   win.loadURL(`file:${__dirname}/prelucrari.html`);
+
+
+}
+
+
+function chooseArticleCustomization(){
+
+
+
 
 }

@@ -5492,7 +5492,7 @@ del {
 }
 .product-imitation {
   text-align: center;
-  padding: 90px 0;
+  padding: 20px 0px;
   background-color: #f8f8f9;
   color: #bebec3;
   font-weight: 600;
@@ -5505,7 +5505,7 @@ del {
   background-color: #f8f8f9;
 }
 .product-imitation.xl {
-  padding: 120px 0;
+  padding: 50px 0;
 }
 .product-desc {
   padding: 20px;

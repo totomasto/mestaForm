@@ -23,6 +23,7 @@ if (handleSquirrelEvent(app)) {
 
 
 let mainWindow;
+let childWindow;
 
 ipc.on('print-to-pdf', function(event){
 
@@ -57,6 +58,10 @@ app.on('ready', ()=>{
   // secondWindow.loadURL(`file:${__dirname}/total.html`);
 
 });
+
+
+
+
 
 
 
